@@ -57,7 +57,8 @@ function Folder({ folder }: { folder: Folder }) {
             </button>
           </>
         ) : (
-          <div
+          <a
+            href={folder.link}
             class="flex items-center gap-1.5 hover:cursor-pointer"
             onclick={() => {
               const event = new CustomEvent("link-clicked", {
@@ -68,7 +69,7 @@ function Folder({ folder }: { folder: Folder }) {
           >
             <img src={FileIcon} alt="" class="w-6 h-6" />
             <p class="">{folder.name.slice(0, 16)}</p>
-          </div>
+          </a>
         )}
       </span>
       {isOpen() && (

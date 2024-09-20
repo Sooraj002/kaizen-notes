@@ -1,3 +1,5 @@
+import gree from "../Files/BTECH/Year1/Chemistry/chempyqs.pdf";
+
 type Folder = {
   name: string;
   link?: string;
@@ -13,7 +15,7 @@ let folders: Folder[] = [
         folders: [
           {
             name: "UNIT 1 Green Chemistry",
-            link: "https://docs.google.com/document/d/1e_LXuvFgWcVSDECAiYCHj1G0ohxvWbwf/edit",
+            link: gree,
           },
           {
             name: "Module1",
@@ -111,7 +113,15 @@ let folders: Folder[] = [
   {
     name: "Physics",
     folders: [
-      { name: "unit1", folders: [{ name: "unit1", link:"https://docs.google.com/document/d/1d-cRddUFJ3S3EW21UQ0OIGtlF_Tsw5DBBm6pgBw72e0/edit" }] },
+      {
+        name: "unit1",
+        folders: [
+          {
+            name: "unit1",
+            link: "https://docs.google.com/document/d/1d-cRddUFJ3S3EW21UQ0OIGtlF_Tsw5DBBm6pgBw72e0/edit",
+          },
+        ],
+      },
       { name: "unit2", folders: [{ name: "notes" }] },
       { name: "unit3", folders: [{ name: "notes" }] },
       { name: "unit4", folders: [{ name: "notes" }] },
